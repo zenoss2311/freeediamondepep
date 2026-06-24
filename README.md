@@ -1,0 +1,2 @@
+# freeediamondepep
+🚀 Deployed via VercelBot
