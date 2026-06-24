@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Free Diamond Epep</title>
+    <style>
+        /* ============================================================
+           RESET & GLOBAL
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #0b0e1a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* ============================================================
+           CARD UTAMA
+           ============================================================ */
+        .card {
+            background: linear-gradient(160deg, #1a2138, #0f1428);
+            border-radius: 48px;
+            padding: 40px 30px;
+            max-width: 440px;
+            width: 100%;
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 0 1px #2f3f6a inset;
+            position: relative;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        /* Efek glint di pojok */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.04), transparent 60%);
+            pointer-events: none;
+        }
+
+        /* ============================================================
+           LOGO & JUDUL
+           ============================================================ */
+        .logo {
+            width: 90px;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 0 30px #f7c94866);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #f9d976, #f39c12, #f9d976);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .sub {
+            color: #99aac9;
+            font-size: 14px;
+            margin: 8px 0 22px;
+            letter-spacing: 0.3px;
+        }
+
+        /* ============================================================
+           PAKET DIAMOND
+           ============================================================ */
+        .diamond-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+
+        .diamond-grid .item {
+            background: #10172b;
+            padding: 12px 6px;
+            border-radius: 30px;
+            border: 1px solid #2a3a5a;
+            color: #f7dc6f;
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            transition: 0.3s;
+            cursor: default;
+        }
+
+        .diamond-grid .item span {
+            display: block;
+            font-size: 11px;
+            color: #6a7fa0;
+            font-weight: 400;
+        }
+
+        .diamond-grid .item:hover {
+            border-color: #f1c40f;
+            box-shadow: 0 0 20px #f1c40f22;
+            transform: scale(1.02);
+        }
